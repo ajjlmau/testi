@@ -41,11 +41,26 @@ nav ul li a:hover{
     display: block;
     margin: 0 auto 0 auto;
     text-align: center;
-    width: 35%;
+    width: 50%;
 }
+
+.text2 {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
 .asd img {
     display: block;
     margin: 100px auto 0 auto;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
 }
 
 .asd h2 {
@@ -66,7 +81,7 @@ nav ul li a:hover{
 }
 
 main .box {
-    text-align: center;
+    text-align: center;   
 }
 
 @media screen and (max-width: 480px) {
@@ -87,7 +102,7 @@ main .box {
 
 .historia {
     background-color: #17161e;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 100px;
 }
 
@@ -96,4 +111,59 @@ main .box {
     margin: 0 auto 0 auto;
     text-align: center;
     width: 100%;
+}
+
+.distro {
+    float: left;
+    margin: 1% 0 0 0;
+    background-color: #17161e;
+    width: 100%;
+}
+
+.distro img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+.distro #nimi {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 10% 0 10%;
+}
+
+.distro #kuvaus {
+    font-size: 1em;
+    margin: 0 10% 0 10%;
+}
+
+#distro-header {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+hr {
+    color: lightslategray;
+}
+
+#distro-header h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#nappi {
+    position: fixed;
+    margin: 0 5% 0 93%;
+    color: white;
+    background-color: #bf4631;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 3px 3px 5px black;
 }

@@ -13,12 +13,13 @@
 		<nav>
             <h1>Linux</h1>
 			<ul>
-				<li><a href="#" id="active">Koti</a></li>
-				<li><a href="#">Lisätietoa linuxista</a></li>
-				<li><a href="#">Jakeluita</a></li>
+				<li><a href="{% url 'index:index' %}">Koti</a></li>
+				<li><a href="{% url 'index:toinensivu' %}">Lisätietoa linuxista</a></li>
+				<li><a href="{% url 'index:distrot' %}">Jakeluita</a></li>
 			</ul>
 		</nav>
 	</header>
+	<a href="#" id="nappi">ylös</a>
     <div class="asd">
     {% block content %}
 

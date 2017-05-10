@@ -1,0 +1,10 @@
+{% extends 'index/base.html' %}
+
+{% block content %}
+    <h2>Jakelut</h2>
+    <p>Linux-käyttöjärjestelmä on aviointa lähdekoodia joten kuka vaan voi ladata linuxin ja muokata siitä sellaisen kuin haluaa.
+        Nämä eri "muokkaukset" linuxista ovat jakeluita. Tunnnettuja jakeluita voit katsoa <a href="{% url 'index:distrot' %}">täältä</a>.
+        Eri jakelut tulevat eri työpöytäympäristöillä ja muilla eri ohjelmistoilla. Jotkut jakelut ovat keskittyneet tiettyyn asiaan esimeriksi
+        turvallisuuteen tai ohjelmistokehitykseen.
+    </p>
+{% endblock %}
