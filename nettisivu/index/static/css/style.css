@@ -7,6 +7,19 @@ body {
     background-color: #1d1c26;
 }
 
+p {
+    color: #b7b7b7;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 nav h1 {
     color: white;
     font-weight: 100;
@@ -54,12 +67,6 @@ nav ul li a:hover{
 .asd img {
     display: block;
     margin: 100px auto 0 auto;
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 
 }
 
@@ -120,16 +127,6 @@ main .box {
     width: 100%;
 }
 
-.distro img {
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-}
-
 .distro #nimi {
     color: white;
     font-size: 2.5em;
@@ -147,6 +144,11 @@ main .box {
     color: white;
     margin-top: 5%;
 }
+
+#distro-header ul li {
+    display: inline;
+}
+
 hr {
     color: lightslategray;
 }
@@ -166,4 +168,29 @@ hr {
     padding: 5px;
     font-size: 25px;
     box-shadow: 3px 3px 5px black;
+    border: 1px solid #666768;
+}
+
+.artikkeli {
+    border: 2px solid #666768;
+    margin: 0 15% 0 15%;
+    background-color: #17161e;
+    border-radius: 2px;
+}
+
+.artikkeliteksti {
+
+    display: inline-block;
+    padding: 5px;
+    bottom: 50px;
+    width: 50%;
+}
+
+.artikkeliteksti p {
+padding: 5px;
+}
+
+.artikkeli img {
+    display: inline-block;
+    padding: 5px;
 }
