@@ -3,7 +3,7 @@
 {% block content %}
     <div id="distro-header">
         <h1>Suosittuja linux-jakeluita</h1>
-        <ul>
+        <ul id="distrolista">
             {% for distro in distrot %}
                 <li><a href="#{{ distro.nimi }}"> {{ distro.nimi }}</a></li>
             {% endfor %}

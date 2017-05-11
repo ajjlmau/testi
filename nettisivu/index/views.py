@@ -12,6 +12,3 @@ def distro(req):
 def toinensivu(req):
     artikkelit = Artikkeli.objects.all()
     return render(req, "index/toinensivu.html", {'artikkelit': artikkelit})
-
-def postaa(req):
-    MyPostForm = PostForm(request.POST)
