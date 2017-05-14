@@ -176,7 +176,7 @@ main .box {
 
 .artikkeli {
     border: 2px solid #666768;
-    margin: 0% 15% 3% 15%;
+    margin: 0% 15% 3% 25%;
     background-color: #17161e;
     border-radius: 2px;
     box-shadow: 3px 3px 10px #0f0e14;
@@ -212,7 +212,6 @@ main .box {
     border-radius: 2px; 
     border-left: none;
     box-shadow: 3px 3px 10px #0f0e14;
-
 }
 
 #artikkeli-navigaatio ul {
@@ -223,6 +222,28 @@ main .box {
     display: block;
 }
 
+@media screen and (max-width: 990px) {
+    #artikkeli-navigaatio {
+        display: none;
+    }
+
+    #nappi {
+        display: none;
+    }
+
+.artikkeliteksti {
+    display: inline-block;
+    padding: 5px;
+    bottom: 50px;
+    width: 100%;
+}
+
+    .artikkelit {
+	margin-top: 5%;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     * {
@@ -230,38 +251,49 @@ main .box {
         padding: 0;
     }
 
-
+    nav { width: 100%;}
 
     nav ul li {
         display: block;
-        float: left;
+        
     }
 
     nav ul {
         border-bottom: black;
+	width: 100%;
     }
 
     nav ul, nav {
         background-color: #131219;
         margin: 0;
     }
+    
+    #distro {
+	margin: 5% 0 0 0;
+    }    
 
     .historia {
         padding: 0;
         margin: 0
     }
 
-    .text {
-        width: 100%;
-    }
-    .text2 {
-        width: 100%;
+    .asd .text {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 90%;
+}
 
-    }
+.text2 {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 90%;
+}
     
-    .artikkeli {
+    .artikkelit {
         width: 100%;
-        margin: 5% 0 0 0;
+        margin: 35% auto 0 auto;
     }
 
     .box {
@@ -274,7 +306,11 @@ main .box {
 
     .artikkeli {
         width: 90%;
-        margin: 0 auto 0 auto;
+        margin: 5% auto 0 auto;
+    }
+	
+    .artikkeli h2 {
+	font-size: 30px;
     }
 
     #artikkeli-navigaatio {
